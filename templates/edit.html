@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit page</title>
+</head>
+<body>
+    
+<form action="/edit/{{user.id}}/go" method="POST">
+
+    <div class="form-group row">
+      <label for="first_name" class="col-sm-2 col-form-label">First Name</label>
+      <div class="col-sm-10">
+        <input type="text"
+               class="form-control"
+               id="first_name"
+               name="first_name"
+               value="{{user.first_name}}">
+      </div>
+    </div>
+  
+    <div class="form-group row">
+      <label for="last_name" class="col-sm-2 col-form-label">Last Name</label>
+      <div class="col-sm-10">
+        <input type="text"
+               class="form-control"
+               id="last_name"
+               name="last_name"
+               value="{{user.last_name}}">
+      </div>
+    </div>
+  
+    <div class="form-group row">
+      <label for="image_url" class="col-sm-2 col-form-label">Image URL</label>
+      <div class="col-sm-10">
+        <input type="text"
+               class="form-control"
+               id="image_url"
+               name="image_url"
+               value="{{user.image_url}}">
+      </div>
+    </div>
+    <div class="form-group row">
+        <div class="ml-auto mr-3">
+          <button type="submit" class="btn btn-success">SAVE</button>
+        </div>
+      </div>
+</form>
+</body>
+</html>
